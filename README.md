@@ -9,6 +9,6 @@ FocusPocus is a lightweight application written in C using the raylib library, i
 - **Cross-Platform:** Supported on multiple platforms, including Windows, macOS, and Linux.
 
 ## Installation
-1. **Clone Repository:** `git clone https://github.com/ilyass.lahbabi/FocusPocus.git`
+1. **Clone Repository:** `git clone <this-repo>`
 2. **Build Executable:** Provided with .sln for MSVC Compiler, Compiled in VS2022.
 3. **Run Application:** Execute the built executable to start FocusPocus.
