@@ -1,6 +1,18 @@
 #pragma once
 #include <math.h>
 
+inline float easeOutSin(float t, float b, float f, float d) {
+    // inout
+    float c = f - b;
+//  return -c / 2 * (cos( PI * t / d) - 1) + b;
+    
+    // in
+    //return -c * cos(t / d * (PI / 2)) + c + b;
+
+    // out
+    return (f - b) * sinf((t / d) * (PI / 2)) + b;
+}
+
 inline float easeOutExp(float t, float b, float f, float d) {
     //inout
     //return -c / 2 * (cos( PI * t / d) - 1) + b;

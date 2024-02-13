@@ -7,15 +7,14 @@ typedef unsigned char       BYTE;
 typedef unsigned short      WORD;
 typedef DWORD   COLORREF;
 
-#define RGB(r,g,b)          ((COLORREF)(((BYTE)(r)|((WORD)((BYTE)(g))<<8))|(((DWORD)(BYTE)(b))<<16)))
-
-bool MakeWindowTransparent(COLORREF colorKey);
-
 bool AddIconToTaskBar(void* hwnd);
 bool RemoveIconToTaskBar(void* hwnd);
 
 void CaptureMousePosition(int* x, int* y);
 
-void ListenToHotKey(bool* shouldPocus, bool* shouldExit);
+void SetWindowProcHandle(void* hwnd);
+void RegisterHotKeys(void* hwnd);
 
+void DoPocus();
+void DoExit();
 
